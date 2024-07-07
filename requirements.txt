@@ -1,0 +1,12 @@
+streamlit
+pandas
+streamlit_option_menu
+matplotlib
+seaborn
+numpy
+scipy
+plotly
+missingno
+streamlit-aggrid
+statistics
+astropy
