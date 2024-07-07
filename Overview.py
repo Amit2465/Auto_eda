@@ -60,7 +60,7 @@ def check_warnings(df):
             warnings.append(f"<span style= 'background-color:#ffeeee; color:#aa3333; padding:4px; border-radius:4px; font-size:12px;'><i>{col}</i></span> has a high cardinality: {unique_count} distinct values")
 
     # Missing values check
-    total_cells = np.product(df.shape)
+    total_cells = np.prod(df.shape)
     missing_count = df.isnull().sum().sum()
     if missing_count > 0:
         missing_percentage = (missing_count / total_cells) * 100
