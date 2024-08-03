@@ -17,6 +17,25 @@ st.set_page_config(
     layout='wide'
 )
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
+st.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 4rem;
+                    padding-bottom: 0rem;
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
 
 # set title and description of the page
 st.title('AutoEDA :chart_with_upwards_trend:')
